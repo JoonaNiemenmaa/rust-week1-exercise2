@@ -11,7 +11,7 @@ fn main() {
 
     match syöte.as_str() {
         "rust" => println!("So you appreciate Rust? That's great! Thank you!"),
-        "no" => println!("So you appreciate Rust? That's great! Thank you!"),
+        "no" => println!("So you like nothing? Alright then... :)"),
         _ => println!("It seems that you like {syöte}."),
     }
 }
