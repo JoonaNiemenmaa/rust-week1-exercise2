@@ -11,7 +11,10 @@ fn main() {
 
     match syöte {
         "Rust" => println!("So you appreciate Rust? That's great! Thank you!"),
+        "rUsT" => println!("So you appreciate Rust? That's great! Thank you!"),
         "No" => println!("So you like nothing? Alright then... :)"),
+        "no" => println!("So you like nothing? Alright then... :)"),
+        "NO" => println!("So you like nothing? Alright then... :)"),
         _ => println!("It seems that you like {syöte}."),
     }
 }
