@@ -7,14 +7,11 @@ fn main() {
         .read_line(&mut buf)
         .expect("Virheellinen syöte.");
 
-    let syöte = buf.trim();
+    let syöte = buf.trim().to_ascii_lowercase();
 
-    match syöte {
-        "Rust" => println!("So you appreciate Rust? That's great! Thank you!"),
-        "rUsT" => println!("So you appreciate Rust? That's great! Thank you!"),
-        "No" => println!("So you like nothing? Alright then... :)"),
-        "no" => println!("So you like nothing? Alright then... :)"),
-        "NO" => println!("So you like nothing? Alright then... :)"),
+    match syöte.as_str() {
+        "rust" => println!("So you appreciate Rust? That's great! Thank you!"),
+        "no" => println!("So you appreciate Rust? That's great! Thank you!"),
         _ => println!("It seems that you like {syöte}."),
     }
 }
